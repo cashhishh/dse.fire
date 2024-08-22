@@ -42,7 +42,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[80vh] overflow-hidden z-10 carousal-inner">
       {carouselItems.map((item, index) => (
         <div
           key={index}

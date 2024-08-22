@@ -8,12 +8,13 @@ const MobileNavbar = () => {
   };
 
   return (
-    <nav className="p-4  fixed top-0 left-0 w-full flex  justify-between items-center shadow-lg md:hidden ">
+    <nav className="p-4 fixed top-0 left-0 w-full flex justify-between items-center shadow-lg md:hidden z-50">
       {/* Logo Section */}
-      <div className="text-BLACK text-lg font-bold flex flex-row items-center gap-2 mr-5">
+      <div className="text-black text-lg font-bold flex items-center gap-2">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfwYgZ_vQ7uPHCjSZWTSHdM0UIMDPJDgZ6BiVjj3Tf2KQuBNGrCTFX2XhXegm8GWEYUo&usqp=CAU"
-          className="h-14 p-2 ml-2"
+          className="h-14 p-2"
+          alt="Company Logo"
         />
         <span className="text-black text-lg lg:text-xl font-sans">
           DS Engineers
@@ -21,10 +22,7 @@ const MobileNavbar = () => {
       </div>
 
       {/* Hamburger Icon */}
-      <button
-        onClick={toggleSidebar}
-        className="text-black focus:outline-none mr-4"
-      >
+      <button onClick={toggleSidebar} className="text-black focus:outline-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -44,15 +42,15 @@ const MobileNavbar = () => {
       {/* Sidebar */}
       {isSidebarOpen && (
         <div
-          className="fixed top-0 right-0 h-full bg-red-100-600 text-white bg-red-500 z-50  transform"
-          style={{ width: "45%" }} // Set the width to 30% of the screen width
+          className="fixed top-0 right-0 h-full bg-red-500 text-white z-50 transition-transform transform"
+          style={{ width: "45%" }}
           aria-labelledby="sidebar"
         >
-          <div className="p-4 flex justify-between items-center border-b border-900">
-            <span className="text-xl text-center">Menu</span>
+          <div className="p-4 flex justify-between items-center border-b border-gray-700">
+            <span className="text-xl">Menu</span>
             <button
               onClick={toggleSidebar}
-              className="text-white  p-2 rounded-lg transition-colors duration-100"
+              className="text-white p-2 rounded-lg transition-colors duration-150"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,44 +69,45 @@ const MobileNavbar = () => {
             </button>
           </div>
           <div className="flex flex-col items-center mt-10 space-y-4">
+            {/* Sidebar Links */}
             <a
               href="#home"
-              className="text-white  hover:bg-red-100 hover:text-red-900 p-1 rounded-lg transition-colors duration-100 text-xl"
+              className="text-white hover:bg-red-700 p-3 rounded-lg transition-colors duration-150"
               onClick={toggleSidebar}
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-white hover:bg-red-100 hover:text-red-900 p-1 rounded-lg transition-colors duration-100 text-xl"
+              className="text-white hover:bg-red-700 p-3 rounded-lg transition-colors duration-150"
               onClick={toggleSidebar}
             >
               About Us
             </a>
             <a
-              href="#Projects"
-              className="text-white hover:bg-red-100 hover:text-red-900 p-1 rounded-lg transition-colors duration-100 text-xl"
+              href="#projects"
+              className="text-white hover:bg-red-700 p-3 rounded-lg transition-colors duration-150"
               onClick={toggleSidebar}
             >
               Projects
             </a>
             <a
               href="#services"
-              className="text-white hover:bg-red-100 hover:text-red-900 p-1 rounded-lg transition-colors duration-100 text-xl"
+              className="text-white hover:bg-red-700 p-3 rounded-lg transition-colors duration-150"
               onClick={toggleSidebar}
             >
               Services
             </a>
             <a
-              href="#Industry"
-              className="text-white hover:bg-red-100 hover:text-red-900 p-1 rounded-lg transition-colors duration-100 text-xl"
+              href="#industry"
+              className="text-white hover:bg-red-700 p-3 rounded-lg transition-colors duration-150"
               onClick={toggleSidebar}
             >
-              Industry we serve
+              Industry We Serve
             </a>
             <a
               href="#contact"
-              className="text-white hover:bg-red-100 hover:text-red-900 p-1 rounded-lg transition-colors duration-100 text-xl"
+              className="text-white hover:bg-red-700 p-3 rounded-lg transition-colors duration-150"
               onClick={toggleSidebar}
             >
               Contact Us
