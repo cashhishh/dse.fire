@@ -43,10 +43,10 @@ function Proj() {
           happening at D S Engineers Day-in and day-out since 2015.
         </p>
         <div className="flex justify-center gap-4 mb-8 mt-10 flex-col md:flex-row  ">
-          <button className="bg-red-600 text-white py-2  mx-10 md:mx-0  md:px-20 rounded hover:bg-red-500">
+          <button className="bg-red-600 text-white py-2   px-4    md:px-20 rounded hover:bg-red-500 ">
             PROJECTS COMPLETED
           </button>
-          <button className="bg-white text-black  border-black border py-2 mx-10 md:mx-0  px-6 md:px-20 rounded hover:bg-black hover:first-line:text-white">
+          <button className="bg-white text-black  border-black border  py-2   px-4    md:px-20 rounded hover:bg-black hover:text-white">
             ONGOING PROJECTS
           </button>
         </div>
@@ -60,8 +60,8 @@ function Proj() {
             />
           ))}
         </div>
-        <div className="flex justify-center gap-4 mb-8 mt-10 flex-col md:flex-row  ">
-          <button className="bg-white text-red-500 text-lg border border-red-600 py-2    md:px-20 rounded hover:bg-red-500 hover:first-line:text-white">
+        <div className="flex justify-center  mb-8 mt-10 flex-col md:flex-row  ">
+          <button className="bg-white text-red-500 text-lg border border-red-600 py-2   md:px-20 rounded hover:bg-red-500 hover:text-white">
             Check All Completed Projects→
           </button>
         </div>

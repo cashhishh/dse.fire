@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ imgSrc, title, description }) {
   return (
-    <div className="bg-white shadow-md rounded-lg overflow-hidden">
+    <div className="bg-white shadow-md rounded-lg overflow-hidden pb-6">
       <img
         src={imgSrc}
         alt="Placeholder"

@@ -11,7 +11,7 @@ const ImageSection = () => {
       />
 
       {/* Overlay text div */}
-      <div className="absolute inset-0 flex md:items-start md:justify-start p-4 md:ml-[40%] mt-20 left-40% ">
+      <div className="absolute inset-0 flex md:items-start md:justify-start p-4 md:ml-[40%] mt-20 left-50% ">
         <div className="transition-transform duration-1000 transform -translate-x-full animate-slide-in-text ml-[50%] md:ml-0">
           <span className="text-3xl font-bold text-red-800 bg-red-50 p-6 rounded-e-full">
             WHY US?
