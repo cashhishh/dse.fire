@@ -14,7 +14,7 @@ function MainNav() {
       <div className="md:hidden">
         <MobileNavbar />
       </div>
-    </div>
+    </div>  
   );
 }
 

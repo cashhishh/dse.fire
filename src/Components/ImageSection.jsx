@@ -1,5 +1,4 @@
 import React from "react";
-import "./ImageSection.css"; // Import custom CSS for animations
 
 const ImageSection = () => {
   return (
@@ -19,7 +18,7 @@ const ImageSection = () => {
           </span>
 
           {/* Grid Layout */}
-          <div className="md:grid grid-cols-2  gap-4 w-full max-w-lg mt-10 flex flex-col items-center">
+          <div className="md:grid grid-cols-1  gap-4 w-full max-w-lg mt-10 flex flex-col items-center">
             <div className="bg-gray-50 p-6 rounded-lg rounded-e-full hover:bg-red-900 hover:first-line:text-red-200  ">
               <h3 className="text-xl  font-semibold  text-red-900">
                 100% Inhouse Experts
@@ -32,12 +31,7 @@ const ImageSection = () => {
             </div>
             <div className=" bg-gray-50 p-6 rounded-lg  rounded-e-full hover:bg-red-900 hover:first-line:text-red-200  ">
               <h3 className="text-xl font-semibold text-red-900">
-                Trained Workforce
-              </h3>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg  rounded-e-full hover:bg-red-900 hover:first-line:text-red-200  ">
-              <h3 className="text-xl font-semibold text-red-900">
-                Trusted Firm
+                Trained Workforceprojects and ongoing projects.
               </h3>
             </div>
           </div>

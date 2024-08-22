@@ -8,7 +8,7 @@ const MobileNavbar = () => {
   };
 
   return (
-    <nav className="p-4  fixed top-0 left-0 w-full flex  justify-between items-center shadow-lg md:hidden">
+    <nav className="p-4  fixed top-0 left-0 w-full flex  justify-between items-center shadow-lg md:hidden ">
       {/* Logo Section */}
       <div className="text-BLACK text-lg font-bold flex flex-row items-center gap-2 mr-5">
         <img

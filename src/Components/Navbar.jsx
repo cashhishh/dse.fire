@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <div>
-      <nav className=" p-4  fixed top-0 left-0 w-full flex bg-white justify-between items-center shadow-lg">
+      <nav className=" p-4  fixed top-0 left-0 w-full flex bg-white justify-between items-center shadow-lg z-1000">
         <div className="text-BLACK text-lg font-bold flex flex-row items-center gap-2 mr-5">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfwYgZ_vQ7uPHCjSZWTSHdM0UIMDPJDgZ6BiVjj3Tf2KQuBNGrCTFX2XhXegm8GWEYUo&usqp=CAU"
