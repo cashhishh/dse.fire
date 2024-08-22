@@ -25,7 +25,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
-    }, 3000); // Change image every 3 seconds
+    }, 2000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -65,13 +65,13 @@ const Carousel = () => {
 
       {/* Navigation Buttons */}
       <button
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2  text-white p-2 rounded-full "
         onClick={handlePrev}
       >
         &lt;
       </button>
       <button
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2  text-white p-2 rounded-full "
         onClick={handleNext}
       >
         &gt;
