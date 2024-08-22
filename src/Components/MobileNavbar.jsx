@@ -8,7 +8,7 @@ const MobileNavbar = () => {
   };
 
   return (
-    <nav className="p-4 fixed top-0 left-0 w-full flex justify-between items-center shadow-lg md:hidden z-50">
+    <nav className="p-4 fixed top-0 left-0 w-full flex justify-between items-center shadow-lg md:hidden z-50 bg-white">
       <div className="text-black text-lg font-bold flex items-center gap-2">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfwYgZ_vQ7uPHCjSZWTSHdM0UIMDPJDgZ6BiVjj3Tf2KQuBNGrCTFX2XhXegm8GWEYUo&usqp=CAU"
