@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-
+import Home from "./pages/home";
 function App() {
   return (
     <div>
@@ -24,7 +24,8 @@ function App() {
         <Proj />
         <Footer /> */}
         {/* <About /> */}
-        <Projects />
+        {/* <Projects /> */}
+        <Home />
       </div>
     </div>
   );

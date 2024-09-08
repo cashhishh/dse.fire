@@ -4,7 +4,8 @@ import OurServices from "../Components/OurServices";
 import ImageSection from "../Components/ImageSection";
 import Proj from "../Components/Proj";
 import Footer from "../Components/Footer";
-function home() {
+import AboutUs from "../Components/AboutUs";
+function Home() {
   return (
     <div>
       <Carousel />
@@ -17,4 +18,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;
