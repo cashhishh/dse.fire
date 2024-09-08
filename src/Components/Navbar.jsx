@@ -1,5 +1,7 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import home from "../pages/home";
+import { useState } from "react";
 function Navbar() {
   return (
     <div>
@@ -16,7 +18,7 @@ function Navbar() {
 
         <div className="space-x-2 lg:space-x-5  max-x-50 mr-4 font-sans text-md flex flex-row text-sm md:text-md ">
           <a
-            href="#home"
+            href="/home"
             className="text-black font-semibold hover:text-red-700 hover:bg-gray-100 rounded-lg p-2 "
           >
             HOME

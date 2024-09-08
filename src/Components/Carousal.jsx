@@ -16,7 +16,7 @@ const carouselItems = [
       "https://t3.ftcdn.net/jpg/05/06/00/02/360_F_506000269_OiSKvLSAoPmRs6gMCex0yWsieIfSTBjH.jpg",
     text: "Aim to understand the priorities of the project",
   },
-  // Add more items as needed
+ 
 ];
 
 const Carousel = () => {
@@ -25,7 +25,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
-    }, 2000); // Change image every 3 seconds
+    }, 2000); 
 
     return () => clearInterval(interval);
   }, [currentIndex]);
@@ -63,7 +63,7 @@ const Carousel = () => {
         </div>
       ))}
 
-      {/* Navigation Buttons */}
+      
       <button
         className="absolute top-1/2 left-4 transform -translate-y-1/2  text-white p-2 rounded-full "
         onClick={handlePrev}

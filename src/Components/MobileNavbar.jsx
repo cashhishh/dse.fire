@@ -39,7 +39,7 @@ const MobileNavbar = () => {
 
       {isSidebarOpen && (
         <div
-          className="fixed top-0 right-0 h-full bg-red-500 text-white z-50 transition-transform transform"
+          className="fixed top-0 right-0 h-full bg-red-500 text-white z-50 transition-transform transform "
           style={{ width: "45%" }}
           aria-labelledby="sidebar"
         >
@@ -65,7 +65,7 @@ const MobileNavbar = () => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-col items-center mt-10 space-y-4">
+          <div className="flex flex-col items-center mt-10 space-y-4 px-8 ">
             <a
               href="#home"
               className="text-white hover:bg-red-700 p-3 rounded-lg transition-colors duration-150"

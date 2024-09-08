@@ -3,13 +3,6 @@ import React from "react";
 const services = [
   {
     imgSrc:
-      "https://img.freepik.com/free-vector/flat-illustration-firefighters-putting-out-fire_23-2149131218.jpg",
-    title: "Fire  Detection.",
-    description:
-      "Prevention is better than cure-A well designed FIRE DETECTION SYSTEM can detect and help prevent a major disaster “FIRE”.Fire detection system comprises of well - placed network of detector",
-  },
-  {
-    imgSrc:
       "https://static.vecteezy.com/system/resources/previews/008/945/188/non_2x/cartoon-character-of-engineer-man-holding-plan-paper-vector.jpg",
     title: "Public health Engineering ",
     description:
@@ -38,7 +31,7 @@ const OurServices = () => {
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
         Our Services
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 mx-auto max-w-7xl px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 mx-auto max-w-7xl px-4">
         {services.map((service, index) => (
           <div
             key={index}
@@ -47,7 +40,7 @@ const OurServices = () => {
             <img
               src={service.imgSrc}
               alt={service.title}
-              className="w-full h-60 object-cover shadow-xl mb-4"
+              className="w-full md:h-60 object-cover h-[50%] shadow-xl mb-4"
             />
             <h3 className="text-xl font-semibold mb-2 text-center text-black underline">
               {service.title}
