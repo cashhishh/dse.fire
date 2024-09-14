@@ -13,7 +13,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Home from "./pages/home"; // Fixed typo: home to Home
 import ExecutedProject from "./pages/ExecutedProject";
-import OngoingProject from "./pages/OngoingProject";
+
 import Ongoingproject from "./pages/OngoingProject";
 import CompanyProf from "./pages/CompanyProf";
 import MissionPage from "./pages/Mission";
