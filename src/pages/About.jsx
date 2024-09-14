@@ -19,7 +19,7 @@ function About() {
       <CompanyProfile />
       {/* <Mission /> */}
 
-      <Footer />
+    
     </div>
   );
 }
