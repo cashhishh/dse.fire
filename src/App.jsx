@@ -11,7 +11,7 @@ import Proj from "./Components/Proj";
 import Footer from "./Components/Footer";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Home from "./pages/home"; // Fixed typo: home to Home
+import Home from "./pages/Home"; // Fixed typo: home to Home
 import ExecutedProject from "./pages/ExecutedProject";
 
 import Ongoingproject from "./pages/OngoingProject";
