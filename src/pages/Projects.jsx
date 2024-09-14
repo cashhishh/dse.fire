@@ -10,7 +10,7 @@ function Projects() {
       <ProjectAniDiv />
       <ProjectBand />
       <ProjectTable />
-      <Footer />
+    
     </div>
   );
 }
