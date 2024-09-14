@@ -2,17 +2,15 @@ import React from "react";
 import ProjectAniDiv from "../Components/ProjectAniDiv";
 import ProjectBand from "../Components/ProjectBand";
 import ProjectTable from "../Components/ProjectTable";
-import Footer from "../Components/Footer";
 
-function Projects() {
+function ExecutedProject() {
   return (
     <div>
       <ProjectAniDiv />
       <ProjectBand />
       <ProjectTable />
-      <Footer />
     </div>
   );
 }
 
-export default Projects;
+export default ExecutedProject;

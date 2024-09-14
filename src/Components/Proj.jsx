@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Proj() {
@@ -33,7 +33,7 @@ function Proj() {
       {" "}
       <div className="p-20  w-full bg-red-50 ">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
-          Our Services
+          Our Projects
         </h2>
         <p className="text-gray-600 mb-10 text-md md:text-lg  text-center">
           “Excellence in Performance” has resulted in our association with some
@@ -43,12 +43,18 @@ function Proj() {
           happening at D S Engineers Day-in and day-out since 2015.
         </p>
         <div className="flex justify-center gap-4 mb-8 mt-10 flex-col md:flex-row  ">
-          <button className="bg-red-600 text-white py-2   px-4    md:px-20 rounded hover:bg-red-500 ">
+          <Link
+            to="/projects/ExecutedProject"
+            className="bg-red-600 text-white py-2 px-4 md:px-20 rounded hover:bg-red-500 text-center inline-block"
+          >
             PROJECTS COMPLETED
-          </button>
-          <button className="bg-white text-black  border-black border  py-2   px-4    md:px-20 rounded hover:bg-black hover:text-white">
+          </Link>
+          <Link
+            to="/projects/OngoingProject"
+            className="bg-white text-black  border-black border  py-2   px-4    md:px-20 rounded hover:bg-black hover:text-white"
+          >
             ONGOING PROJECTS
-          </button>
+          </Link>
         </div>
         <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-3">
           {cards.map((card) => (
@@ -61,9 +67,12 @@ function Proj() {
           ))}
         </div>
         <div className="flex justify-center  mb-8 mt-10 flex-col md:flex-row  ">
-          <button className="bg-white text-red-500 text-lg border border-red-600 py-2   md:px-20 rounded hover:bg-red-500 hover:text-white">
+          <Link
+            to="/projects/ExecutedProject"
+            className="bg-white text-red-500 text-lg border border-red-600 py-2   md:px-20 rounded hover:bg-red-500 hover:text-white"
+          >
             Check All Completed Projects→
-          </button>
+          </Link>
         </div>
       </div>
     </div>

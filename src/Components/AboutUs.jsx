@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (
     <div>
@@ -18,9 +18,12 @@ const AboutUs = () => {
           services in all facets of civil engineering from conceptualizations to
           commissioning & after sales service.
         </p>
-        <button className="bg-red-600 text-white px-6 py-3 rounded-lg text-base md:text-lg hover:bg-red-800 transition duration-300">
+        <Link
+          to="/about"
+          className="bg-red-600 text-white px-6 py-3 rounded-lg text-base md:text-lg hover:bg-red-800 transition duration-300"
+        >
           Learn More
-        </button>
+        </Link>
         <div>
           <img
             src="https://t4.ftcdn.net/jpg/08/08/40/89/360_F_808408937_J2P3A8Vt5ysKL2YE4493PItC0C38iiT5.jpg"

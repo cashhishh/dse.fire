@@ -1,18 +1,15 @@
 import React from "react";
 import ProjectAniDiv from "../Components/ProjectAniDiv";
 import ProjectBand from "../Components/ProjectBand";
-import ProjectTable from "../Components/ProjectTable";
-import Footer from "../Components/Footer";
-
-function Projects() {
+import OngoingProjecttable from "../Components/OngoingProjecttable";
+function Ongoingproject() {
   return (
     <div>
       <ProjectAniDiv />
       <ProjectBand />
-      <ProjectTable />
-      <Footer />
+      <OngoingProjecttable />
     </div>
   );
 }
 
-export default Projects;
+export default Ongoingproject;
