@@ -1,7 +1,5 @@
 // src/AnimatedImages.jsx
 import React from "react";
-import useIntersectionObserver from "./useIntersectionObserver";
-import "./AnimatedImages.css"; // Custom styles
 
 const images = [
   {
@@ -30,32 +28,19 @@ const images = [
   },
 ];
 
-const positions = [
-  "top-left", // Image 1
-  "top-center", // Image 2
-  "top-right", // Image 3
-  "bottom-left", // Image 4
-  "bottom-center", // Image 5
-  "bottom-right", // Image 6
-];
-
 const AnimatedImages = () => {
-  const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.1 });
-
   return (
-    <div
-      ref={ref}
-      className={`grid grid-cols-2 gap-[100px] p-4 pr-20 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3`}
-    >
+    <div className="grid grid-cols-2 gap-6 p-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
       {images.map((image, index) => (
-        <div
-          key={index}
-          className={`relative overflow-hidden transition-transform duration-1000 ease-in-out ${
-            isIntersecting ? "transform translate-y-0" : `${positions[index]}`
-          } img-container`}
-        >
-          <img src={image.src} alt={`Image ${index + 1}`} />
-          <div className="img-text font-bold text-2xl">{image.text}</div>
+        <div key={index} className="relative overflow-hidden">
+          <img
+            src={image.src}
+            alt={`Image ${index + 1}`}
+            className="w-full h-auto object-cover"
+          />
+          <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50 text-2xl font-bold">
+            {image.text}
+          </div>
         </div>
       ))}
     </div>
