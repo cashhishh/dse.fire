@@ -11,7 +11,7 @@ import Proj from "./Components/Proj";
 import Footer from "./Components/Footer";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Home from "./pages/home"; // Fixed typo: home to Home
+import Home from "./pages/Home"; // Fixed typo: home to Home
 import ExecutedProject from "./pages/ExecutedProject";
 
 import Ongoingproject from "./pages/OngoingProject";
@@ -22,6 +22,8 @@ import Certifications from "./pages/Certifications";
 import Services from "./pages/Services";
 import Industry from "./pages/Industry";
 import Contact from "./pages/Contact";
+import Firefighting from "./pages/Firefighting";
+import PlumbingWork from "./pages/PlumbingWork";
 function App() {
   return (
     <Router>
@@ -43,6 +45,8 @@ function App() {
               element={<ExecutedProject />}
             />
             <Route path="/certifications" element={<Certifications />} />
+            <Route path="/fire-fighting" element={<Firefighting />} />
+            <Route path="/sanitoryWork" element={<PlumbingWork />} />
             <Route path="/OngoingProject" element={<Ongoingproject />} />
             <Route path="/mission" element={<MissionPage />} />
             <Route path="/our-team" element={<Ourteam />} />

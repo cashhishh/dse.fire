@@ -25,9 +25,6 @@ function CompanyProfile() {
             to achieve the flexibility and proficiency to meet any challenge a
             project puts forth.
           </p>
-          <button className="bg-red-600 text-white px-6 py-3 rounded-lg text-base md:text-lg hover:bg-red-800 transition duration-300">
-            Learn More
-          </button>
         </div>
         <div>
           <img
