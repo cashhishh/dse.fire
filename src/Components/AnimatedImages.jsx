@@ -1,6 +1,6 @@
 // src/AnimatedImages.jsx
 import React from "react";
-import useIntersectionObserver from "./useIntersectionObserver";
+import useIntersectionObserver from "./UseIntersectionObserver";
 import "./AnimatedImages.css"; // Custom styles
 
 const images = [
