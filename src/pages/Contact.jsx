@@ -1,7 +1,14 @@
 import React from "react";
+import ContactAnimatedDiv from "../Components/ContactAnimatedDiv";
+import ContactDetails from "../Components/ContactDetails";
 
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <ContactAnimatedDiv />
+      <ContactDetails />
+    </div>
+  );
 }
 
 export default Contact;

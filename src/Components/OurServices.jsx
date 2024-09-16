@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./OurServices.css"; // Make sure to import your CSS file
 
 const services = [
   {
@@ -12,11 +13,10 @@ const services = [
   {
     imgSrc:
       "https://climatesmartwater.org/wp-content/themes/knowlege_platform_wp/images/opp_circle/Water_Abstraction.png",
-    title: "Water Distribution.              ",
+    title: "Water Distribution.",
     description:
       "We had designed and installed a pressurized system (hydro pneumatic System) in the mid 90’s and since the have designed and installed many system. The entire operation is controlled and monitored through BMS.",
   },
-
   {
     imgSrc:
       "https://5.imimg.com/data5/SELLER/Default/2024/2/393382177/DR/LR/JO/192096718/fire-extinguisher-refilling-service-500x500.jpg",
@@ -28,16 +28,13 @@ const services = [
 
 const OurServices = () => {
   return (
-    <div className="py-12  w-full">
+    <div className="py-12 w-full">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12">
         Our Services
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 mx-auto max-w-7xl px-4">
         {services.map((service, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center bg-white p-6 rounded-lg mb-8 md:mb-0"
-          >
+          <div key={index} className="service-card animate-slide-in">
             <img
               src={service.imgSrc}
               alt={service.title}
@@ -47,12 +44,12 @@ const OurServices = () => {
               {service.title}
             </h3>
             <div className="bg-red-50 text-center pb-4">
-              <p className=" text-base text-center text-gray-900 p-2 mt-4 rounded-md  ">
+              <p className="text-base text-center text-gray-900 p-2 mt-4 rounded-md">
                 {service.description}
               </p>
               <Link
                 to="/services"
-                className="bg-red-600 text-white  p-1 mt-2 rounded-md  hover:bg-red-700"
+                className="bg-red-600 text-white p-1 mt-2 rounded-md hover:bg-red-700"
               >
                 Read more
               </Link>
